@@ -245,7 +245,7 @@ def backtest_modes(df, upper_col, lower_col, modes):
 # =========================
 # Streamlit 介面
 # =========================
-st.title("📈 Stock8 技術分析系統")
+st.title("📈 Stock8 技術分析系統!")
 
 # 使用者輸入股票代號
 stock_id = st.text_input("輸入股票代號", "2330")  # 預設值台積電
@@ -282,4 +282,5 @@ if st.button("開始分析"):
             "分批", "統計分布", "事件驅動"
         ]
         backtest_modes(df, upper_col, lower_col, all_modes)
+
 
